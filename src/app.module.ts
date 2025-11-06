@@ -14,11 +14,11 @@ import { InnovationMailModule } from './innovationmail/innovationmail.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: '127.0.0.1',
       port: 3306,
-      username: 'root',
-      password: '',
-      database: 'enid-innovations',
+      username: 'enid_user',
+      password: 'StrongPassword123!',
+      database: 'enid_innovations',
       entities: [Projects],
       autoLoadEntities: true,
       synchronize: true, // ⚠️ only in development
