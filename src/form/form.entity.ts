@@ -16,7 +16,7 @@ export class Form {
   @Column()
   email: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 16 })
   phonenumber: number;
 
   @Column()
